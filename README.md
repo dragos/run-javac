@@ -7,16 +7,16 @@ Usage
 =====
 
 ```
-$ scala -cp path/to//run-javac/bin/ scala.tools.javac.Main $CASSANDRASRC 
+$ scala -cp path/to/run-javac/bin/ scala.tools.javac.Main $CASSANDRASRC 
 Initializing compiler.. done.
  === compiling 822 files ===
  === Compilation took 844,331 microseconds ===
 ```
 
-Or, if the argument list is too long, you can read arguments from a `@file`:
+Or, if the argument list is too long, you can put arguments in a file:
 
 ```
-$ scala -cp path/to/run-javac/bin/ scala.tools.javac.Main @jdksources
+$ scala -cp path/to/run-javac/bin/ scala.tools.javac.Main @jdksources.txt
 Initializing compiler.. done.
  === compiling 7436 files ===
  === Compilation took 2,543,626 microseconds ===
